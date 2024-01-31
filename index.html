@@ -14,7 +14,18 @@
 
 <!-- PAGE LEVEL PLUGIN STYLES -->
 <link href="airflo\css\animate.css" rel="stylesheet">
-
+<script>
+          window.onload = function() {
+              var portfolioSection = document.getElementById('portfolio');
+  
+              // Check if the element exists before attempting to scroll to it
+              if (portfolioSection) {
+                  setTimeout(function() {
+                      portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+                  }, 600); // Adjust the timeout duration (in milliseconds) as needed
+              }
+          };
+      </script>
 <!-- THEME STYLES -->
 <link href="airflo\css\layout.min.css" rel="stylesheet" type="text/css"/>
 <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
