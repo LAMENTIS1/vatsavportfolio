@@ -311,5 +311,36 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+          <div class='float-message'>
+<div class='float-message-inner'>
+  <a href="#!" onclick="$('.float-message').hide();" class="close-link">X</a>
+  <p>Kindly select the projects to access more detailed information.</p>
+</div>
+</div>
+<style>.float-message {
+	position:fixed;
+  	z-index:1001;
+  	max-width:400px;
+  	bottom:20px;
+  	right:20px;
+  	padding:30px;
+  	color:#444;
+  	font-size:16px;
+  	border-radius:5px;
+  	background:#FFF;
+  	box-shadow:0px 5px 10px rgba(0,0,0,0.5);
+}
+.float-message-inner {
+	position:relative;
+}
+.close-link {
+	text-decoration:none;
+  	color:#444;
+  	font-weight:bold;
+  	position:absolute;
+  	top:-15px;
+  	right:-15px;
+  	font-size:18px;
+}</style>
 </body>
 </html>
